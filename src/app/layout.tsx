@@ -2,6 +2,33 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+
+const satoshi = localFont({
+  src: [
+    { path: "../../public/fonts/Satoshi-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Satoshi-Italic.woff2", weight: "400", style: "italic" },
+    { path: "../../public/fonts/Satoshi-Medium.woff2", weight: "500", style: "normal" },
+    { path: "../../public/fonts/Satoshi-MediumItalic.woff2", weight: "500", style: "italic" },
+    { path: "../../public/fonts/Satoshi-Bold.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts/Satoshi-BoldItalic.woff2", weight: "700", style: "italic" },
+    { path: "../../public/fonts/Satoshi-Black.woff2", weight: "900", style: "normal" },
+    { path: "../../public/fonts/Satoshi-BlackItalic.woff2", weight: "900", style: "italic" },
+  ],
+  variable: "--font-satoshi",
+});
+const integralCF = localFont({
+  src: [
+    { path: "../../public/fonts-IntegralCF/IntegralCF-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-RegularOblique.woff2", weight: "400", style: "Oblique" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-Medium.woff2", weight: "500", style: "normal" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-MediumOblique.woff2", weight: "500", style: "Oblique" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-Heavy.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-HeavyOblique.woff2", weight: "700", style: "Oblique" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-ExtraBold.woff2", weight: "900", style: "normal" },
+    { path: "../../public/fonts-IntegralCF/IntegralCF-ExtraBoldOblique.woff2", weight: "900", style: "Oblique" },
+  ],
+  variable: "--font-integralCF",
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -24,9 +51,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${satoshi.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${satoshi.variable} ${integralCF.variable} antialiased`}
       >
         {children}
       </body>

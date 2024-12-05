@@ -12,6 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        satoshi: ["var(--font-satoshi, )" , "sans-serif"],
+        integralCF: ["var(--font-integralCF, )" , "sans-serif"],
+      },
+      screens: {
+        xs: '392px',
+      },
     },
   },
   plugins: [],
