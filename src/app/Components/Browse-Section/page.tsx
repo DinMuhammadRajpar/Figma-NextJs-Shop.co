@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // const BrowseSection = () => {
@@ -32,24 +33,24 @@ const BrowseSection = () => {
         </div>
         <div className="flex gap-5 sm:flex-nowrap flex-wrap justify-center my-5 mx-3">
           <div className="">
-            <img
+            <Image
               src="/Assets/casual.png"
               alt="Casual Dress"
               className="sm:block hidden"
             />
-            <img
+            <Image
               src="/Assets/casual_mbl.png"
               alt="Casual Dress"
               className="sm:hidden block"
             />
           </div>
           <div className="">
-            <img
+            <Image
               src="/Assets/formal.png"
               alt="Formal Dress"
               className="sm:block hidden"
             />
-            <img
+            <Image
               src="/Assets/formal_mbl.png"
               alt="Formal Dress"
               className="sm:hidden block"
@@ -58,24 +59,24 @@ const BrowseSection = () => {
           </div>
           <div className="flex gap-5 sm:flex-nowrap flex-wrap justify-center mx-3">
             <div className="">
-              <img
+              <Image
                 src="/Assets/party.png"
                 alt="Casual Dress"
                 className="sm:block hidden"
               />
-              <img
+              <Image
                 src="/Assets/party_mbl.png"
                 alt="party Dress"
                 className="sm:hidden block"
               />
             </div>
             <div className="">
-              <img
+              <Image
                 src="/Assets/gym.png"
                 alt="Formal Dress"
                 className="sm:block hidden"
               />
-              <img
+              <Image
                 src="/Assets/gym_mbl.png"
                 alt="gym Dress"
                 className="sm:hidden block"

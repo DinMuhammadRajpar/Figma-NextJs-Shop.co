@@ -1,4 +1,11 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import Vector from "/Assets/Vector.png"
+import HamburgerIcon from "/Assets/Hamburger_icon.png"
+import SearchIcon from "/Assets/Search.png"
+import UserIcon from "/Assets/user_nav.png"
+import CartIcon from "/Assets/cart_nav.png"
 
 const Header = () => {
   return (
@@ -9,11 +16,11 @@ const Header = () => {
             <h3 className="font-satoshi text-[14px] font-normal leading-[18.9px] ">
               Sign up and get 20% off to your first order.
               <span className="font-satoshi text-[14px] font-medium leading-[18.9px] underline decoration-solid cursor-pointer">
-                <a href="#"> Sign Up Now</a>
+                <Link href="#"> Sign Up Now</Link>
               </span>
             </h3>
             <div className="lg:block absolute hidden right-24">
-              <img src="/Assets/Vector.png" alt="Cross" />
+              <Image src={Vector} alt="Cross" />
             </div>
           </div>
         </div>
@@ -24,40 +31,40 @@ const Header = () => {
           
           <div className="logo flex items-center sm:gap-3.5 gap-2.5">
           <div className="hamburger block md:hidden cursor-pointer">
-            <img src="/Assets/Hamburger_icon.png" alt="Hamburger Icon" />
+            <Image src={HamburgerIcon} alt="Hamburger Icon" />
             <div className="hidden">
-              <ul className="">
+              <ul>
               <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 Shop
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 On Sale
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 New Arrivals
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 Brands
-              </a>
+              </Link>
             </li>
               </ul>
             </div>
@@ -69,47 +76,47 @@ const Header = () => {
 
           <ul className="flex gap-5  hidden md:flex ">
             <li className="flex gap-[3px] items-center">
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 Shop
-              </a>
+              </Link>
               <img src="/Assets/Frame.png" alt="Down arrow frame" className="h-[15px] w-auto"/>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 On Sale
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 New Arrivals
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[16px] font-normal leading-[21.6px] text-left"
               >
                 Brands
-              </a>
+              </Link>
             </li>
           </ul>
 
           <div className="nav_searchbar lg:w-[500px] w-30% h-[40px] p-[10px_14px] gap-[12px] rounded-[62px] bg-[#F0F0F0] flex items-center hidden md:flex">
-            <img
-              src="/Assets/Search.png"
+            <Image
+              src={SearchIcon}
               alt="Search Icon"
               className="w-[20.27px] h-[20.27px] top-[1.86px] left-[1.86px] text-[#00000066] "
             />
-            <form action="">
+            <form>
               <input
                 type="text"
                 placeholder="Search for products..."
@@ -120,22 +127,22 @@ const Header = () => {
 
           <div className="flex md:gap-2.5 gap-1.5">
             <div>
-            <img
-              src="/Assets/Search_icon_sm.png"
+            <Image
+              src={SearchIcon}
               alt="Search Icon"
               className="w-[20.27px] h-[20.27px] block md:hidden cursor-pointer"
             />
             </div>
             <div>
-              <img
-                src="/Assets/user_nav.png"
+              <Image
+                src={UserIcon}
                 alt="User Icon"
                 className="w-[20.27px] h-[20.27px] cursor-pointer"
               />
             </div>
             <div>
-              <img
-                src="/Assets/cart_nav.png"
+              <Image
+                src={CartIcon}
                 alt="Cart Icon"
                 className="w-[20.27px] h-[20.27px] cursor-pointer"
               />

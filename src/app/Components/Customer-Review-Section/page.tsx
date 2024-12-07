@@ -1,4 +1,7 @@
+import Image from "next/image";
 import React from "react";
+import fiveRating from "/Assets/5.0_rating.png";
+import varifiedTick from "/Assets/varified_tick.png";
 
 const CustomerReview = () => {
   return (
@@ -10,13 +13,13 @@ const CustomerReview = () => {
           </h1>
         </div>
         <div className="border border-[#0000001A] rounded-[20px] col-start-1 md:col-span-2 col-span-6 px-[28px] py-[32px] ">
-          <img src="/Assets/5.0_rating.png" alt="" className="mb-2" />
+          <Image src={fiveRating} alt="" className="mb-2" />
           <div className="flex gap-[6px] items-center mb-2">
             <h1 className="font-satoshi text-lg font-bold leading-[22px] text-left underline decoration-skip-ink">
               Sarah M.
             </h1>
-            <img
-              src="/Assets/varified_tick.png"
+            <Image
+              src={varifiedTick}
               alt="varified"
               className="h-full"
             />
@@ -29,13 +32,13 @@ const CustomerReview = () => {
         </div>
 
         <div className="border border-[#0000001A] rounded-[20px] md:col-start-3 col-start-1 md:col-span-2 col-span-6 px-[28px] py-[32px]">
-          <img src="/Assets/5.0_rating.png" alt="" className="mb-2" />
+          <Image src={fiveRating} alt="" className="mb-2" />
           <div className="flex gap-[6px] items-center mb-2">
             <h1 className="font-satoshi text-lg font-bold leading-[22px] text-left underline decoration-skip-ink">
               Alex K.
             </h1>
-            <img
-              src="/Assets/varified_tick.png"
+            <Image
+              src={varifiedTick}
               alt="varified"
               className="h-full"
             />
@@ -48,13 +51,13 @@ const CustomerReview = () => {
           </p>
         </div>
         <div className="border border-[#0000001A] rounded-[20px] md:col-start-5 col-start-1 md:col-span-2 col-span-6 px-[28px] py-[32px]">
-          <img src="/Assets/5.0_rating.png" alt="" className="mb-2" />
+          <Image src={fiveRating} alt="" className="mb-2" />
           <div className="flex gap-[6px] items-center mb-2">
             <h1 className="font-satoshi text-lg font-bold leading-[22px] text-left underline decoration-skip-ink">
               James L.
             </h1>
-            <img
-              src="/Assets/varified_tick.png"
+            <Image
+              src={varifiedTick}
               alt="varified"
               className="h-full"
             />

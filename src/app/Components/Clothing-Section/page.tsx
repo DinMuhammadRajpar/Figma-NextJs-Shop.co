@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 // const ClothingSection = () => {
@@ -206,7 +208,7 @@ const ClothingSection: React.FC<ClothingSectionProps> = ({
             } sm:col-span-2 col-start-1 col-span-4`}
           >
             <div className="h-auto w-full">
-              <img
+              <Image
                 src={item.src}
                 alt={item.alt}
                 className="h-[279px] w-full object-cover rounded-[20px]"
@@ -219,7 +221,7 @@ const ClothingSection: React.FC<ClothingSectionProps> = ({
                 </span>
               </div>
               <div className="flex gap-[10px]">
-                <img
+                <Image
                   src={`/Assets/${item.rating.toFixed(1)}_rating.png`}
                   alt="Rating"
                 />
@@ -252,12 +254,12 @@ const ClothingSection: React.FC<ClothingSectionProps> = ({
         ))}
         <div className="col-start-1 col-span-4">
           <div className="place-self-center border border-[#0000001A] rounded-[62px] px-[54px] py-[16px] hover:bg-[#F0EEED] transition duration-200 ease-in-out cursor-pointer">
-            <a
-              href="#"
+            <button>
+              <Link href="#"></Link>
               className="font-satoshi text-[16px] font-medium leading-[21.6px] text-left"
-            >
+            
               {buttonText}
-            </a>
+            </button>
           </div>
         </div>
       </div>

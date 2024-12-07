@@ -1,4 +1,15 @@
+import Image from "next/image";
 import React from "react";
+import EmailIcon from "/Assets/email.png";
+import TwitterIcon from "/Assets/twitter.png";
+import FacebookIcon from "/Assets/facebook.png";
+import InstagramIcon from "/Assets/instagram.png";
+import GitHubIcon from "/Assets/github.png";
+import VisaCard from   "/Assets/visa_card.png"
+import MasterCard from  "/Assets/master_card.png"
+import AppleCard from  "/Assets/apple_card.png"
+import GoogleCard from  "/Assets/google_card.png" 
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,7 +21,7 @@ const Footer = () => {
         <div className="md:col-start-8 col-start-1 md:col-span-3 col-span-12 self-start ">
           <div className="bg-white rounded-[62px] mb-[10px]">
             <form action="" className="gap-[10px] flex items-center px-4 py-3">
-              <img src="/Assets/email.png" alt="email" />
+              <Image src={EmailIcon} alt="email" />
               <input
                 type="text"
                 placeholder="Enter your email address"
@@ -37,16 +48,16 @@ const Footer = () => {
           </p>
           <div className="flex gap-[15px]">
             <div className="p-1.5 bg-white rounded-full flex items-center justify-center">
-              <img src="/Assets/twitter.png" alt="twitter" />
+              <Image src={TwitterIcon} alt="twitter" />
             </div>
             <div className="bg-black rounded-full flex items-center justify-center px-2.5 py-1.5">
-              <img src="/Assets/facebook.png" alt="facebook" />
+              <Image src={FacebookIcon} alt="facebook" />
             </div>
             <div className="p-1.5 bg-white rounded-full flex items-center justify-center">
-              <img src="/Assets/instagram.png" alt="instagram" />
+              <Image src={InstagramIcon} alt="instagram" />
             </div>
             <div className="p-1.5 bg-white rounded-full flex items-center justify-center">
-              <img src="/Assets/github.png" alt="github" />
+              <Image src={GitHubIcon} alt="github" />
             </div>
           </div>
         </div>
@@ -57,36 +68,36 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Feature
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Work
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Career
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -96,36 +107,36 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Customer Support
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Delivery Details
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Terms & Condition
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -135,36 +146,36 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099] text-[#00000099]"
               >
                 Account
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099] text-[#00000099]"
               >
                 Manage Deliveries
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099] text-[#00000099]"
               >
                 Orders
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099] text-[#00000099]"
               >
                 Payments
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -174,36 +185,36 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Free eBook
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Development Tutorial
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 How to - Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="font-satoshi text-[14px] font-normal leading-[30px] text-left text-[#00000099]"
               >
                 Youtube Playlist
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -217,10 +228,10 @@ const Footer = () => {
           <h4 className="font-satoshi text-[14px] font-normal leading-[18.9px] text-right text-[#00000099]">Shop.co © 2000-2023, All Rights Reserved</h4>
         </div>
         <div className="flex ">
-          <img src="/Assets/visa_card.png" alt="Visa Pay" />
-          <img src="/Assets/master_card.png" alt="Master Pay" />
-          <img src="/Assets/apple_card.png" alt="Apple Pay" />
-          <img src="/Assets/google_card.png" alt="Google Pay" />
+          <Image src={VisaCard} alt="Visa Pay" />
+          <Image src={MasterCard} alt="Master Pay" />
+          <Image src={AppleCard} alt="Apple Pay" />
+          <Image src={GoogleCard} alt="Google Pay" />
         </div>
       </div>
     </div>

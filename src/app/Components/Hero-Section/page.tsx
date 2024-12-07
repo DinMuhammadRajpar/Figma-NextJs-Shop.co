@@ -1,4 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import LeftStar from "/Assets/left-star-heroSection.png"
+import MainImg from "/Assets/main_img_heroSection.png"
+import MainImgSM from "/Assets/main_img_sm_heroSection.png"
+import RightStar from "/Assets/right-star-heroSection.png"
 
 const HeroSection = () => {
   return (
@@ -20,12 +26,12 @@ const HeroSection = () => {
             </div>
             <div className="mb-[35px]">
               <div className="px-[54px] py-[16px] gap-[12px] rounded-[62px] bg-black md:h-[50px] md:w-[184px] w-full h-[auto] flex items-center justify-center flex-wrap">
-                <a
+                <Link
                   href="#"
                   className="font-satoshi text-[16px] font-medium leading-[21.6px] text-left text-white"
                 >
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex flex-wrap justify-center">
@@ -60,16 +66,16 @@ const HeroSection = () => {
 
           <div className="md:col-start-7 col-start-1 md:col-span-6 col-span-12 relative self-center">
             <div className="absolute sm:h-[100%]] h-[44px] lg:top-[280px] md:top-[180px] top-[130px] lg:left-[15px] md:left-[8px] left-[25px] ">
-                <img src="/Assets/left-star-heroSection.png" alt="Star" />
+                <Image src={LeftStar} alt="Star" />
             </div>
             <div className="md:h-[39rem] md:overflow-hidden h-auto sm:block hidden">
-              <img src="/Assets/main_img_heroSection.png" alt="Main Image" />
+              <Image src={MainImg} alt="Main Image" />
             </div>
             <div className="h-full sm:hidden block ">
-                <img src="/Assets/main_img_sm_heroSection.png" alt="Main Image" />
+                <Image src={MainImgSM} alt="Main Image" />
             </div>
             <div className="absolute lg:top-[90px] md:top-[50px] top-[25px] md:right-[0px] right-[5px] sm:h-[100%] h-[75px] ">
-                <img src="/Assets/right-star-heroSection.png" alt="Star" />
+                <Image src={RightStar} alt="Star" />
             </div>
           </div>
         </div>
